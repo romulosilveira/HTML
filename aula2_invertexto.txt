@@ -1,0 +1,225 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "editor.lineHeight": 2,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "workbench.startupEditor": "newUntitledFile", //sempre abrir o vs com um arquivo novo
+  "editor.wordWrap": "on", //não deixar criar a barra de rolagem de baixo, quebra a linha visualmente
+  "editor.minimap.renderCharacters": false, // forma de exibição do mini mapa
+  "telemetry.telemetryLevel": "off", //parar de enviar formulário pra windows
+  "security.workspace.trust.untrustedFiles": "open", // parar de aparecer msg de segurança sempre que abrir um arquivo
+  "breadcrumbs.filePath": "off", //não mostrar o documento no caminho da tag
+  "outline.icons": false, // não mostrar icon no caminho da tag
+  "liveServer.settings.donotShowInfoMsg": true, //tirar avisos do LiveServer
+  "liveServer.settings.donotVerifyTags": true, //tirar avisos do LiveServer
+  "editor.formatOnSave": true, // organizar automaticamente ao salvar
+  "html.format.wrapAttributes": "auto", //mudando apenas o jeito que os atributos são quebrados
+  "html.format.wrapLineLength": 0, //e o tamanho da linha ao salvar
+  // "html.autoClosingTags": false, // parar de ficar fechando tag autometica qdo está no meio da tag.
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // botando o prettier como editor padrão de formatação
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features" //menos pro HTML
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1,
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML</title>
+</head>
+
+<body>
+    <ol>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+
+
+    <ul>
+        <li>
+            <a href="https://ge.globo.com/?utm_source=globo.com&utm_medium=header">
+                <img width="100" src="https://encurtador.com.br/jvJSX" alt="Um monte de bregueço">
+            </a>
+        </li>
+        <li>
+            Itens
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </li>
+        <li>Abacaxi</li>
+        <li>Melancia</li>
+        <li>Uva</li>
+    </ul>
+
+</body>
+
+</html>
+
+
+
+
+EXERCICIO
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML</title>
+</head>
+
+<body>
+    <h1>Livros de Receitas</h1>
+    <ol>
+        <li>
+            Baião de Dois
+            <ul>
+                <li>
+                    Ingredientes
+                    <ol>
+                        <li>Arroz</li>
+                        <li>Feijão</li>
+                        <li>Queijo</li>
+                        <li>Fé</li>
+                    </ol>
+                </li>
+                <li>
+                    Modo de Preparo
+                    <ol>
+                        <li>Pega todos os ingredientes</li>
+                        <li>Taca na panela</li>
+                        <li>Taca no prato</li>
+                        <li>E reza</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Batata Recheada</li>
+        <li>Lasanha de Camarão</li>
+    </ol>
+</body>
+
+</html>
+
+
+
+
+FORMULÁRIO
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML</title>
+</head>
+
+<body>
+    <h2>Meu formulário</h2>
+    <form>
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario">
+
+        <br>
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade">
+
+        <br>
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="*************">
+
+        <br>
+        <label for="data_nasc">Data de nascimento</label>
+        <input type="date" id="data_nasc" name="data_nasc">
+
+        <br>
+        <label for="horario_chegada">Horario de Chegada</label>
+        <input type="time" id="horario_chegada" name="horario_chegada">
+
+        <br>
+        <label for="cor">Escolha uma cor</label>
+        <input type="color" id="cor" name="cor">
+
+        <br>
+        <label for="arquivo">Escolha uma arquivo</label>
+        <input type="file" id="arquivo" name="arquivo">
+
+
+        <br>
+        <label for="barrinha">Mova a barra</label>
+        <input type="range" id="barrinha" name="barrinha">
+
+        <br>
+        <label>Sexo</label>
+        <br>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="outros" name="sexo" value="outros">
+        <label for="outros">Outros</label>
+
+        <br>
+        <label>Linguagens</label>
+        <br>
+        <input type="checkbox" id="py" name="linguagens" value="Python">
+        <label for="py">Python</label>
+        <br>
+        <input type="checkbox" id="html" name="linguagens" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" id="css" name="linguagens" value="CSS">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" id="js" name="linguagens" value="Javascript">
+        <label for="js">Javascript</label>
+
+        <br>
+        <label for="cidade">Selecione sua cidade</label>
+        <br>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma opção</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="macaranau">Macaranaú</option>
+            <option value="caucaia">Caucaia</option>
+            <option value="maranguape">Maranguape</option>
+        </select>
+
+        <br>
+        <label for="comentario">Comentário</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="19" rows="4"></textarea>
+
+        <br>
+        <button>Enviar</button>
+        <input type="reset">
+
+        <br>
+
+
+    </form>
+
+</body>
