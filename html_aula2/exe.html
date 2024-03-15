@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO FORMULARIO</title>
+</head>
+<body>
+    <H2>Cadastro</H2>
+    <br>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="celular">Celular com DDD:</label>
+        <input type="number" name="celular" id="celular" placeholder="11 9999-9999" required>
+        <label for="horario">Hora desejada:</label>
+        <input type="time" name="horario" id="horario">
+        <br>
+        <label for="site">Seu site:</label>
+        <input type="text" name="site" id="site" required>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <br>
+        <label for="data_nasc">Data Nasc:</label>
+        <input type="date" name="data_nasc" id="data_nasc">
+        <label for="cor">Cor favorita:</label>
+        <input type="color" name="cor" id="cor">
+        <br>
+        <label for="q_filhos">Qtde Filhos:</label>
+        <input type="number" name="q_filhos" id="q_filhos">
+        <label for="peso">Peso 0</label>
+        <input type="range" name="peso" id="peso">
+        <label>200</label>
+        <br>
+        <br>
+        <label>Sexo:</label>
+        <br>
+        <input type="radio" name="sexo" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" name="sexo" id="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br>
+        <br>
+        <label>Estado:</label>
+        <select name="cidade" id="cidade">
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="AM">AM</option>
+            <option value="CE">CE</option>
+            <option value="BA">BA</option>
+        </select>
+        <br>
+        <label for="mensagem">Mensagem:</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="40" rows="5"></textarea>
+        <br>
+        <button>Enviar</button>
+        <input type="reset">
+    </form>
+    
+</body>
+</html>
